@@ -4,6 +4,7 @@ import logo from "../assets/images/LoremIpsum.png";
 import error from "../assets/images/ERROR.png";
 import error404 from "../assets/images/error404.png";
 import Header from "../components/Header";
+import "../index.css";
 const Error = () => {
   return (
     <Box
@@ -17,6 +18,7 @@ const Error = () => {
       }}
     >
       <Box
+        className="blur"
         sx={{
           position: "absolute",
           width: "1000px",
@@ -29,6 +31,7 @@ const Error = () => {
         }}
       ></Box>
       <Box
+        className="blur"
         sx={{
           position: "absolute",
           width: "1000px",
@@ -41,6 +44,7 @@ const Error = () => {
         }}
       ></Box>
       <Box
+        className="blur"
         sx={{
           position: "absolute",
           width: "1000px",
@@ -53,13 +57,14 @@ const Error = () => {
         }}
       ></Box>
       <Box
+        className="backBlur"
         sx={{
           position: "absolute",
 
           background: "rgba(11, 11, 34, 0.9)",
           width: "100%",
           height: "100vh",
-          backdropFilter: "blur(175px)",
+
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -87,6 +92,7 @@ const Error = () => {
             src={error}
             alt="error"
           />
+
           <Typography
             sx={{
               fontFamily: "Comfortaa, cursive",

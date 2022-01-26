@@ -5,3 +5,21 @@
   font-family: 'Lexend Deca', sans-serif;
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .backBlur {
+    -webkit-backdrop-filter: blur(175px);
+    backdrop-filter: blur(175px);
+  }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  
+  .blur{
+    display: none;
+  }
+}
+
+.letras{
+  font-size: bold
+}
